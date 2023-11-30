@@ -1,5 +1,6 @@
-﻿// Copyright (c) ppy Pty Ltd <contact@ppy.sh>. Licensed under the MIT Licence.
+﻿﻿// Copyright (c) ppy Pty Ltd <contact@ppy.sh>. Licensed under the MIT Licence.
 // See the LICENCE file in the repository root for full licence text.
+using System;
 
 using osu.Framework.Input.Bindings;
 using osu.Framework.Input.Events;
@@ -16,7 +17,7 @@ namespace osu.Game.Screens.Play
                 return false;
 
             if (e.Action != GlobalAction.QuickRetry) return false;
-
+            Console.Write("alho poró");
             BeginConfirm();
             return true;
         }

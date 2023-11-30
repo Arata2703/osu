@@ -160,6 +160,8 @@ namespace osu.Game.Input.Bindings
             new KeyBinding(InputKey.Enter, GlobalAction.ToggleChatFocus),
             new KeyBinding(InputKey.F1, GlobalAction.SaveReplay),
             new KeyBinding(InputKey.F2, GlobalAction.ExportReplay),
+            new KeyBinding(InputKey.Plus, GlobalAction.IncreaseBeatmapOffset),
+            new KeyBinding(InputKey.Minus, GlobalAction.DecreaseBeatmapOffset),
         };
 
         private static IEnumerable<KeyBinding> replayKeyBindings => new[]
@@ -404,6 +406,12 @@ namespace osu.Game.Input.Bindings
 
         [LocalisableDescription(typeof(GlobalActionKeyBindingStrings), nameof(GlobalActionKeyBindingStrings.EditorToggleRotateControl))]
         EditorToggleRotateControl,
+
+        [LocalisableDescription(typeof(GlobalActionKeyBindingStrings), nameof(GlobalActionKeyBindingStrings.IncreaseBeatmapOffset))]
+        IncreaseBeatmapOffset,
+        
+        [LocalisableDescription(typeof(GlobalActionKeyBindingStrings), nameof(GlobalActionKeyBindingStrings.DecreaseBeatmapOffset))]
+        DecreaseBeatmapOffset,
     }
 
     public enum GlobalActionCategory

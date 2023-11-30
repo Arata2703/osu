@@ -285,6 +285,18 @@ namespace osu.Game.Screens.Play
                             fadeOut(true);
                     },
                 },
+                new AdjustBeatmapOffset
+                {
+                    Action = () =>
+                    {
+                        //if (!this.IsCurrentScreen()) return;
+
+                        // if (PerformExit(false))
+                        //     // The hotkey overlay dims the screen.
+                        //     // If the operation succeeds, we want to make sure we stay dimmed to keep continuity.
+                        //     fadeOut(true);
+                    },
+                },
             });
 
             if (cancellationToken.IsCancellationRequested)

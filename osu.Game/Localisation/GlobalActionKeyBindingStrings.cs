@@ -348,6 +348,16 @@ namespace osu.Game.Localisation
         /// "Toggle rotate control"
         /// </summary>
         public static LocalisableString EditorToggleRotateControl => new TranslatableString(getKey(@"editor_toggle_rotate_control"), @"Toggle rotate control");
+        
+        /// <summary>
+        /// "Toggle rotate control"
+        /// </summary>
+        public static LocalisableString IncreaseBeatmapOffset => new TranslatableString(getKey(@"increase_beatmap_offset"), @"Toggle rotate control");
+        
+        /// <summary>
+        /// "Toggle rotate control"
+        /// </summary>
+        public static LocalisableString DecreaseBeatmapOffset => new TranslatableString(getKey(@"decrease_beatmap_offset"), @"Toggle rotate control");
 
         private static string getKey(string key) => $@"{prefix}:{key}";
     }
